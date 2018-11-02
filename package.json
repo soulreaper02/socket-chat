@@ -1,0 +1,21 @@
+{
+  "name": "iochat",
+  "version": "1.0.0",
+  "description": "A websocket implementation with redis for data storage",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Amit Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5",
+    "q": "^1.5.1",
+    "redis": "^2.8.0",
+    "socket.io": "^2.1.1",
+    "underscore": "^1.9.1",
+    "uuid": "^3.3.2"
+  }
+}

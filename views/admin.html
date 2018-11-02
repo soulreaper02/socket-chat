@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Console</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <ul class="pages">
+        <li class="chat page">
+            <div class="container">
+            </div>
+            <div class="usersOnline">
+                <h1>Online Admin's</h1>
+                <ul class ="adminList" id="admins">                    
+                </ul>
+            </div>
+        </li>
+        <li class="login page">
+            <div class="form">
+                <h3 class="title">Administrator</h3>
+                <input class="username" type="text" maxlength="14" />
+                <h3 class="title">Password</h3>
+                <input class="password" type="password" maxlength="10" />
+            </div>
+        </li>
+        <li class="error page" style="display: none">
+            <div class="form">
+                <h3 class="title">Reconnecting...</h3>
+            </div>
+        </li>
+    </ul>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/admin.js"></script>
+</body>
+</html>
